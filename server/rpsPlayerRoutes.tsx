@@ -28,13 +28,16 @@ router.post("/", (req, res) => {
 	// 	(error) => {
 	// 		error && console.error(error);
 	// 		console.log("User added!");
-	console.log("cokolwiek");
+	
 	// 		res.status(200).json({ msg: "User added" });
 	// 	}
 	// );
+	
 
-	console.log(req.body);
-	res.end({ message: "Kurde cos" });
+		console.log(req.body);
+	
+	res.send(req.body);
+	
 });
 
 router.delete("/:playername", (req, res) => {
